@@ -1,0 +1,67 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/psy-games-front/dist
+/psy-games-back/dist
+/psy-games-front/tmp
+/psy-games-back/tmp
+/psy-games-front/out-tsc
+/psy-games-back/out-tsc
+/psy-games-front/bazel-out
+/psy-games-back/bazel-out
+
+# Node
+/psy-games-front/node_modules
+/psy-games-back/node_modules
+/psy-games-front/npm-debug.log
+/psy-games-back/npm-debug.log
+/psy-games-front/yarn-error.log
+/psy-games-back/yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/psy-games-front/.angular/cache
+/psy-games-back/.angular/cache
+/psy-games-front/.sass-cache/
+/psy-games-back/.sass-cache/
+/psy-games-front/connect.lock
+/psy-games-back/connect.lock
+/psy-games-front/coverage
+/psy-games-back/coverage
+/psy-games-front/libpeerconnection.log
+/psy-games-back/libpeerconnection.log
+/psy-games-front/testem.log
+/psy-games-back/testem.log
+/psy-games-front/typings
+/psy-games-back/typings
+/psy-games-front/.nyc_output
+/psy-games-back/.nyc_output
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
