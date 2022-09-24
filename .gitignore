@@ -13,6 +13,7 @@
 # Node
 /psy-games-front/node_modules
 /psy-games-back/node_modules
+/psy-games-logic/node_modules
 /psy-games-front/npm-debug.log
 /psy-games-back/npm-debug.log
 /psy-games-front/yarn-error.log
