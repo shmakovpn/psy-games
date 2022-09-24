@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    mongo:
+        container_name: mongo_started
+        image: mongo:latest
+        restart: always
+        ports:
+            - 27017:27017
+        volumes:
+            - /home/shmakovpn/projects/2022/psy-games/database/data:/data/db
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=shmakovpn
+            - MONGO_INITDB_ROOT_PASSWORD=vtufvjycnh

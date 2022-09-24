@@ -1,0 +1,11 @@
+{
+  "name": "psy-games-logic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "shmakovpn",
+  "license": "ISC"
+}

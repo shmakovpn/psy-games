@@ -24,6 +24,15 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "start"],
       "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Angular",
+      "cwd": "${workspaceFolder}/psy-games-front",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
