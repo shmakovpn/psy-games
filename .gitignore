@@ -3,12 +3,16 @@
 # Compiled output
 /psy-games-front/dist
 /psy-games-back/dist
+/psy-games-logic/dist
 /psy-games-front/tmp
 /psy-games-back/tmp
+/psy-games-logic/tmp
 /psy-games-front/out-tsc
 /psy-games-back/out-tsc
+/psy-games-logic/out-tsc
 /psy-games-front/bazel-out
 /psy-games-back/bazel-out
+/psy-games-logic/bazel-out
 
 # Node
 /psy-games-front/node_modules
@@ -16,8 +20,10 @@
 /psy-games-logic/node_modules
 /psy-games-front/npm-debug.log
 /psy-games-back/npm-debug.log
+/psy-games-logic/npm-debug.log
 /psy-games-front/yarn-error.log
 /psy-games-back/yarn-error.log
+/psy-games-logic/yarn-error.log
 
 # IDEs and editors
 .idea/
@@ -36,23 +42,39 @@
 !.vscode/extensions.json
 .history/*
 
+# Visual Studio Code (logic)
+psy-games-logic/.vscode/*
+!psy-games-logic/settings.json
+!psy-games-logic/tasks.json
+!psy-games-logic/launch.json
+!psy-games-logic/extensions.json
+!psy-games-logic/.history/*
+
 # Miscellaneous
 /psy-games-front/.angular/cache
 /psy-games-back/.angular/cache
+/psy-games-logic/.angular/cache
 /psy-games-front/.sass-cache/
 /psy-games-back/.sass-cache/
+/psy-games-logic/.sass-cache/
 /psy-games-front/connect.lock
 /psy-games-back/connect.lock
+/psy-games-logic/connect.lock
 /psy-games-front/coverage
 /psy-games-back/coverage
+/psy-games-logic/coverage
 /psy-games-front/libpeerconnection.log
 /psy-games-back/libpeerconnection.log
+/psy-games-logic/libpeerconnection.log
 /psy-games-front/testem.log
 /psy-games-back/testem.log
+/psy-games-logic/testem.log
 /psy-games-front/typings
 /psy-games-back/typings
+/psy-games-logic/typings
 /psy-games-front/.nyc_output
 /psy-games-back/.nyc_output
+/psy-games-logic/.nyc_output
 
 # System files
 .DS_Store

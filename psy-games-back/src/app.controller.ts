@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 import { LocalAuthGuard } from './auth/local-auth.guard';
 import { AuthService } from './auth/auth.service';
 import { JwtAuthGuard } from './auth/jwt-ath.guard';
+import { generateArray } from 'psy-games-logic';
 
 @Controller()
 export class AppController {
@@ -13,8 +14,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    console.log('sslsldll');
-    return `${this.appService.getHello()}`;
+    return `${this.appService.getHello()} ${generateArray(5)}`;
   }
 
   @UseGuards(LocalAuthGuard)
