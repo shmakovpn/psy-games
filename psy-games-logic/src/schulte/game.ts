@@ -72,7 +72,7 @@ abstract class Game {
     return this._endTime;
   }
 
-  get duration(): number | null {
-    if(!this._startTime)
-  }
+  // get duration(): number | null {
+  //   // if(!this._startTime)
+  // }
 }
