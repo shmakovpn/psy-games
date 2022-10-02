@@ -44,10 +44,10 @@
 
 # Visual Studio Code (logic)
 psy-games-logic/.vscode/*
-!psy-games-logic/settings.json
-!psy-games-logic/tasks.json
-!psy-games-logic/launch.json
-!psy-games-logic/extensions.json
+!psy-games-logic/.vscode/settings.json
+!psy-games-logic/.vscode/tasks.json
+!psy-games-logic/.vscode/launch.json
+!psy-games-logic/.vscode/extensions.json
 !psy-games-logic/.history/*
 
 # Miscellaneous
