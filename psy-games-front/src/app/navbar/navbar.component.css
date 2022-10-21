@@ -1,0 +1,16 @@
+.navbar {
+  background-color: black;
+}
+
+.dropdown-item {
+  color: green;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+}
+
+.user_menu.navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}

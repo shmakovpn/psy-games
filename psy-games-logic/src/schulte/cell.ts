@@ -1,4 +1,4 @@
-import { ICellColor } from './cell.color';
+import { CellColor } from './cell.color';
 
 /**
  * Ячейка в таблице Шульте
@@ -15,5 +15,5 @@ export interface ICell {
   /**
    * Текущий цвет ячейки
    */
-  color: ICellColor;
+  color: CellColor;
 }
