@@ -1,0 +1,1 @@
+import { IsDefined } from 'class-va'
