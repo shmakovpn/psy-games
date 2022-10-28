@@ -12,6 +12,7 @@ import {
 } from 'routing-controllers';
 import { loggingBefore, loggingAfter } from '../middleware/middleware';
 import 'reflect-metadata';
+import { Info } from '../model/info';
 
 @Controller()
 // @UseBefore(loggingBefore)
@@ -29,7 +30,8 @@ export class UserController {
 
   @Post('/users/:id')
   @OnUndefined(204)
-  postOne(@Param('id') id: number, @Body() info: any): void {
-    console.log(JSON.stringify(info))
+  postOne(@Param('id') id: number, @Body() info: Info)  {
+    console.log(JSON.stringify(info));
+    return `postOne`;
   }
 }
