@@ -6,13 +6,17 @@ import {
   UseBefore,
   UseAfter,
   UseInterceptor,
-  Action,
   Post,
   OnUndefined,
 } from 'routing-controllers';
 import { loggingBefore, loggingAfter } from '../middleware/middleware';
 import 'reflect-metadata';
 import { Info } from '../model/info';
+import { AuthInfo } from '../model/auth';
+import fs from 'fs';
+import jwt from 'jsonwebtoken';
+
+const RSA_PRIVATE_KEY = fs.readFileSync('./keys/private.key');
 
 @Controller()
 // @UseBefore(loggingBefore)
@@ -30,8 +34,36 @@ export class UserController {
 
   @Post('/users/:id')
   @OnUndefined(204)
-  postOne(@Param('id') id: number, @Body() info: Info)  {
+  postOne(@Param('id') id: number, @Body() info: Info) {
     console.log(JSON.stringify(info));
     // return `postOne`;
+  }
+
+  @Post('/api/login')
+  @UseBefore(loggingBefore)
+  @UseAfter(loggingAfter)
+  @OnUndefined(401)
+  postLogin(@Body() authInfo: AuthInfo) {
+    console.log(`authInfo=${JSON.stringify(authInfo)}`);
+    if (this.validateEmailAndPassword(authInfo.email, authInfo.password)) {
+      const userId = this.findUserIdForEmail(authInfo.email);
+      const jwtBearerToken = jwt.sign({}, RSA_PRIVATE_KEY, {
+        algorithm: 'RS256',
+        expiresIn: 120,
+        subject: userId,
+      });
+      return {
+        idToken: jwtBearerToken,
+        expiresIn: new Date(),
+      };
+    }
+  }
+
+  findUserIdForEmail(email: string): string {
+    return email;
+  }
+
+  validateEmailAndPassword(email: string, password: string): boolean {
+    return !!email && !!password;
   }
 }

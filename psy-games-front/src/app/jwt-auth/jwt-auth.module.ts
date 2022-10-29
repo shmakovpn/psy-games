@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [LoginComponent],
   providers: [JwtAuthService],
-  imports: [CommonModule, BrowserModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   exports: [LoginComponent],
 })
 export class JwtAuthModule {}
