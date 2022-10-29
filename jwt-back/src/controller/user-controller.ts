@@ -32,6 +32,6 @@ export class UserController {
   @OnUndefined(204)
   postOne(@Param('id') id: number, @Body() info: Info)  {
     console.log(JSON.stringify(info));
-    return `postOne`;
+    // return `postOne`;
   }
 }

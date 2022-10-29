@@ -41,6 +41,7 @@ psy-games-logic/.vscode/*
 /*/.sass-cache
 /*/connect.lock
 /*/coverage
+/*/test/coverage
 /*/libpeerconnection.log
 /*/testem.log
 /*/typings
